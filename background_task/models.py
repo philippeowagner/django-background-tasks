@@ -62,7 +62,6 @@ class TaskManager(models.Manager):
                 ready = ready[:count]
             else:
                 ready = self.none()
-
         return ready
 
     def unlocked(self, now):
